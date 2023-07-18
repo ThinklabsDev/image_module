@@ -127,9 +127,12 @@ function magicExtension(input) {
   if (arrComp(signature, [137, 80, 78, 71])) {
     return "png";
   }
-  if (arrComp(signature, [255, 216, 255])) {
-    return "jpeg";
-  }
+	if (arrComp(signature, [255, 216, 255])) {
+		return "jpeg";
+	}
+	if (arrComp(signature, [82, 73, 70, 70])) {
+		return "jpg";
+	}
   if (arrComp(signature, [71, 73, 70, 56])) {
     return "gif";
   }
